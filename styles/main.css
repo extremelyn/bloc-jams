@@ -61,6 +61,16 @@ body {
     }
 }
 
+.clearfix:before,
+.clearfix:after, {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
 /* Large screens (1024px) */
 @media (min-width: 64rem) {
     html { 
