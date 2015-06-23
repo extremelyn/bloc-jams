@@ -77,3 +77,7 @@ body.album {
          margin: auto;
      }
  }
+
+th {
+    text-align: left;
+}
