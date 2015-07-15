@@ -1,5 +1,6 @@
-var animatePoints = function() {
-    var points = document.getElementsByClassName('point');
+var pointsArray = document.getElementsByClassName('point');
+
+var animatePoints = function(points) {
     var revealPoint = function() {
         for (var i = 0; i < points.length; i++) {    
             points[i].style.opacity = 1;
@@ -10,3 +11,16 @@ var animatePoints = function() {
     };
     revealPoint();
 };
+
+window.onload = function() {
+    if (window.innerHeight > 950) {
+        animatePoints(pointsArray);
+    }
+    
+    window.addEventListener('scroll', function(event) {
+        if (pointsArray[0].getBoundingClientRect().top <= 500) {
+            animatePoints(pointsArray);
+        }
+    });
+    
+}
