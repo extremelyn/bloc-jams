@@ -4,7 +4,7 @@
      artist: 'Pablo Picasso',
      label: 'Cubism',
      year: '1881',
-     albumArtUrl: '/assets/images/album_covers/01.png',
+     albumArtUrl: 'assets/images/album_covers/01.png',
      songs: [
          { name: 'Blue', length: '4:26' },
          { name: 'Green', length: '3:14' },
